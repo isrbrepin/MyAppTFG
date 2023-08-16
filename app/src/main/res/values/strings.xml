@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">MyAppTFG</string>
+    <string name="text_logo_app">Logo_App</string>
+    <string name="text_help">AYUDA</string>
+    <string name="text_info_proceso">Información del proceso</string>
+    <string name="text_preoperatorio">Preoperatorio.\nAntes de la cirugía.</string>
+    <string name="text_postoperatorio">Postoperatorio.\nTras la cirugía.</string>
 </resources>
