@@ -63,8 +63,12 @@
         android:layout_gravity="center"
         android:layout_marginTop="25dp"
         android:elevation="12dp"
-        android:background="@drawable/body_drawable">
-        <TextView
+        android:background="@drawable/body_drawable"
+        android:clickable="true"
+        android:onClick="openActivityInfo">
+        <!-- Resto del contenido -->
+
+    <TextView
             android:id="@+id/text_info"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
