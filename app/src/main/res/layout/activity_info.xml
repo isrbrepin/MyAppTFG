@@ -9,93 +9,75 @@
     tools:context=".MainActivity"
     android:orientation="vertical">
 
-  <!-- HeaderLayout -->
-  <!-- Fin HeaderLayout -->
+  <!-- Incluir el header reutilizable -->
+  <include layout="@layout/activity_header" />
 
-  <!-- Cuadro de ayuda -->
 
-  <FrameLayout
-      android:id="@+id/HeaderLayout"
+  <TextView
+      android:id="@+id/text_info"
       android:layout_width="match_parent"
-      android:layout_height="100dp"
-      android:background="@drawable/header_drawable"
-      android:orientation="horizontal">
+      android:layout_gravity="center"
+      android:gravity="center"
+      android:elevation="20dp"
+      android:background="@drawable/pagactual_drawable"
+      android:layout_height="73dp"
+      android:text="@string/text_info_proceso"
+      android:textAlignment="center"
+      android:textSize="25sp"
+      android:textColor="#005B14"
+      android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/textLogoApp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginVertical="33dp"
-        android:text="@string/text_logo_app"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        android:textStyle="bold" />
+  <!-- Resto del contenido -->
 
-    <FrameLayout
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_gravity="end"
-        android:layout_marginBottom="15dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="15dp"
-        android:background="@drawable/help_drawable">
-
-      <TextView
-          android:id="@+id/text_help"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_gravity="center"
-          android:gravity="center"
-          android:text="@string/text_help"
-          android:textAlignment="center"
-          android:textSize="18sp"
-          android:textStyle="bold" />
-
-    </FrameLayout>
-
-  </FrameLayout>
-
-  <!-- Fin Cuadro de ayuda -->
-  <FrameLayout
-      android:id="@+id/InfoLayout"
-      android:layout_width="370dp"
+  <TextView
+      android:id="@+id/text_cancer"
+      android:gravity="center"
+      android:text="@string/text_cancer"
+      android:background="@drawable/body_drawable"
+      android:textAlignment="center"
+      android:textSize="25sp"
+      android:layout_width="match_parent"
       android:layout_height="132dp"
       android:layout_gravity="center"
       android:layout_marginTop="25dp"
+      android:layout_marginEnd="15dp"
+      android:layout_marginStart="15dp"
+      android:elevation="12dp"
+      android:textStyle="bold" />
+
+
+  <TextView
+      android:id="@+id/text_proctologia"
+      android:layout_width="match_parent"
+      android:layout_gravity="center"
+      android:gravity="center"
+      android:layout_marginTop="25dp"
+      android:layout_marginEnd="15dp"
+      android:layout_marginStart="15dp"
       android:elevation="12dp"
       android:background="@drawable/body_drawable"
-      android:clickable="true"
-      android:onClick="openInfoActivity">
-    <TextView
-        android:id="@+id/text_info"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:text="@string/text_info_proceso"
-        android:textAlignment="center"
-        android:textSize="25sp"
-        android:textStyle="bold" />
-  </FrameLayout>
-  <FrameLayout
-      android:id="@+id/PreoperatorioLayout"
-      android:layout_width="370dp"
       android:layout_height="132dp"
+      android:text="@string/text_proctologia"
+      android:textAlignment="center"
+      android:textSize="25sp"
+      android:textStyle="bold" />
+
+
+  <TextView
+      android:id="@+id/text_suelo"
+      android:layout_width="match_parent"
       android:layout_gravity="center"
+      android:gravity="center"
       android:layout_marginTop="25dp"
+      android:layout_marginEnd="15dp"
+      android:layout_marginStart="15dp"
       android:elevation="12dp"
-      android:background="@drawable/body_drawable">
-    <TextView
-        android:id="@+id/text_preoperatorio"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:text="@string/text_preoperatorio"
-        android:textAlignment="center"
-        android:textSize="25sp"
-        android:textStyle="bold" />
-  </FrameLayout>
+      android:background="@drawable/body_drawable"
+      android:layout_height="132dp"
+      android:text="@string/text_suelo"
+      android:textAlignment="center"
+      android:textSize="25sp"
+      android:textStyle="bold" />
 
 </LinearLayout>
+
