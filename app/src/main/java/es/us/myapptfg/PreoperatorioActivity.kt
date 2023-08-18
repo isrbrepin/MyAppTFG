@@ -3,10 +3,9 @@ package es.us.myapptfg
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class InfoActivity : AppCompatActivity() {
+class PreoperatorioActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_info)
-
+        setContentView(R.layout.activity_preoperatorio)
     }
 }

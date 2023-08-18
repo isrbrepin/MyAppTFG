@@ -7,6 +7,20 @@
     android:background="@drawable/header_drawable"
     android:orientation="horizontal">
 
+    <ImageButton
+        android:id="@+id/btn_flecha_atras"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="start|top"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"
+        android:background="?attr/selectableItemBackground"
+        android:contentDescription="Volver atrás"
+        android:onClick="handleBackButtonClick"
+        android:src="@drawable/ic_arrow_back">
+
+    </ImageButton>
+
     <TextView
         android:id="@+id/textLogoApp"
         android:layout_width="wrap_content"
